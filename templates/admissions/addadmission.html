@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add addmissions page</title>
+</head>
+
+<body>
+    <form action="/ad/addadmission" method="POST">
+        {% csrf_token %}
+
+
+        <div class="container">
+
+            <div>
+                <label>Student Name : </label><br>
+                <input type="text" placeholder="Enter your Name " name="name" required>
+            </div><br>
+
+            <div>
+                <label>D.O.B : </label><br>
+                <input type="date" placeholder="Enter your Data of Birth" name="dob" required>
+            </div><br>
+
+            <div>
+                <label>Father Name : </label><br>
+                <input type="text" placeholder="Enter your Father Name " name="fatherName" required>
+            </div><br>
+
+            <div>
+                <label>Class Name : </label><br>
+                <input type="text" placeholder="Enter Class Name " name="className" required>
+            </div><br>
+
+            <div>
+                <label>Contact Number : </label><br>
+                <input type="text" placeholder="Enter your Contact Number " name="contact" required>
+            </div><br>
+
+
+            <button type="submit">Add Student</button>
+
+        </div>
+    </form>
+</body>
+
+</html>
